@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102035">
+  <meta name="description" content="백엔드·웹 개발자 안재원의 포트폴리오. 운영 서비스의 문제 해결과 개인 프로젝트의 설계·검증 과정을 기록합니다.">
+  <title>안재원 — Backend & Web Developer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102035'/%3E%3Cpath d='M15 43 27 18h7l-12 25M29 43l12-25h8L37 43' fill='none' stroke='%238bb2ff' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <header class="site-header" id="top">
+    <div class="header-inner wrap">
+      <a class="brand" href="#top" aria-label="안재원, 맨 위로"><span class="brand-mark">AJW<span class="brand-dot">.</span></span><span class="brand-caption">DEVELOPER / NOTES</span></a>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="메뉴 열기"><span></span><span></span></button>
+      <nav class="main-nav" id="primary-nav" aria-label="주 메뉴">
+        <a href="#work">프로젝트</a><a href="#experience">경험</a><a href="#notes">기록</a><a href="#contact" class="nav-contact">연락하기 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> 안재원 · BACKEND / WEB DEVELOPER</p>
+          <h1 id="hero-title">운영에서 발견한 문제를<br><em>제품의 개선</em>으로 잇습니다.</h1>
+          <p class="hero-intro">Spring과 PostgreSQL로 서비스를 만들고 운영합니다. 실제 사용자의 문의, 로그와 데이터를 출발점으로 문제를 좁히고, 고친 뒤에는 동작을 확인합니다.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#work">프로젝트 살펴보기 <span aria-hidden="true">↗</span></a><a class="text-link light" href="https://github.com/nakk3975" target="_blank" rel="noopener noreferrer">GitHub 프로필 <span aria-hidden="true">↗</span></a></div>
+          <div class="hero-meta"><span>서울 · 웹 서비스 개발</span><span>Spring · MyBatis · PostgreSQL</span></div>
+        </div>
+        <div class="hero-aside" aria-label="주요 작업 영역">
+          <div class="aside-top"><span>FIELD NOTES</span><span>01 / 03</span></div>
+          <div class="aside-main"><span class="aside-kicker">WHAT I WORK ON</span><p>운영 중인 서비스를<br>더 <strong>안정적</strong>이고<br>쓰기 <strong>편하게.</strong></p></div>
+          <div class="aside-bottom"><div><span>01</span><span>예약 · 관리자 기능</span></div><div><span>02</span><span>SQL · 성능 · 장애 분석</span></div><div><span>03</span><span>개인 제품 설계와 배포</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section work-section" id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="section-label">01 / SELECTED WORK</p><h2 id="work-title">만들고, 운영하고, 개선한 것들</h2></div><p>서비스 운영에서 배운 문제 해결 방식과 개인 프로젝트의 실험을 함께 담았습니다.</p></div>
+        <article class="featured-project">
+          <div class="featured-number">01 <span>/ 업무</span></div>
+          <div class="featured-main"><p class="project-overline">SERVICE OPERATIONS · 2024 — 현재</p><h3>Templestay<br><span>예약 서비스 운영·개선</span></h3><p>예약 홈페이지와 행정관리 서비스를 담당하며 예약 흐름, 관리자 기능, 통계 조회를 개선합니다. 고객사와 사찰의 문의를 직접 듣고, 로그와 SQL로 현상을 확인해 사용자가 겪는 문제를 해결합니다.</p><ul class="project-points"><li>예약 정책과 예외 상황을 화면부터 데이터까지 점검</li><li>PostgreSQL·MyBatis 조회와 운영 통계 개선</li><li>문의 대응, 장애 분석, 수정 후 동작 확인까지 담당</li></ul><div class="tags"><span>Java</span><span>Spring</span><span>MyBatis</span><span>PostgreSQL</span><span>Redis</span></div></div>
+          <div class="featured-stamp" aria-hidden="true"><span>OPERATE</span><span>OBSERVE</span><span>IMPROVE</span></div>
+        </article>
+        <div class="project-grid">
+          <article class="project-card"><div class="card-top"><span class="card-index">02 / PERSONAL</span><span class="card-glyph" aria-hidden="true">ER</span></div><h3>EternalReturnGG</h3><p>이터널 리턴의 전적 검색, 경기 분석, 통계와 사냥 동선 계획을 연결한 웹 서비스. API 요청과 캐시, 화면별 데이터 구성을 다듬으며 성능을 검증하고 있습니다.</p><div class="card-footer"><div class="tags"><span>Spring Boot</span><span>JSP</span><span>Supabase</span></div><div class="card-links"><a href="https://github.com/nakk3975/EternalReturnGG" target="_blank" rel="noopener noreferrer">코드 ↗</a><a href="https://eternalreturngg.onrender.com/er/search/view" target="_blank" rel="noopener noreferrer">사이트 ↗</a></div></div></article>
+          <article class="project-card"><div class="card-top"><span class="card-index">03 / PERSONAL</span><span class="card-glyph" aria-hidden="true">GC</span></div><h3>Game Chronicle</h3><p>Steam 플레이 상태를 관측해 나만의 게임 타임라인을 만드는 프로젝트. 웹 서버와 예약 수집을 분리하고, 관측 공백을 플레이 시간으로 잘못 더하지 않도록 설계했습니다.</p><div class="card-footer"><div class="tags"><span>Spring Boot</span><span>React</span><span>Supabase</span></div><div class="card-links"><a href="https://github.com/nakk3975/Game_Chronicle" target="_blank" rel="noopener noreferrer">코드 ↗</a><a href="https://game-chronicle.onrender.com" target="_blank" rel="noopener noreferrer">사이트 ↗</a></div></div></article>
+          <article class="project-card"><div class="card-top"><span class="card-index">04 / PERSONAL</span><span class="card-glyph" aria-hidden="true">OT</span></div><h3>OrbitTrip</h3><p>국가를 탐색하고 여행 기간, 도시, 이미 예약한 이동 시간을 입력하면 일차별 동선을 짜는 여행 플래너. 추천 일정을 직접 고치고 충돌을 확인하는 프로토타입입니다.</p><div class="card-footer"><div class="tags"><span>JavaScript</span><span>Node.js</span><span>Neon</span></div><div class="card-links"><a href="https://github.com/nakk3975/OrbitTrip" target="_blank" rel="noopener noreferrer">코드 보기 ↗</a></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title"><div class="wrap experience-grid"><div><p class="section-label">02 / EXPERIENCE</p><h2 id="experience-title">코드 밖의 맥락까지<br>읽는 개발자</h2><p class="experience-lead">화면에 보이는 오류와 실제 원인은 다를 때가 많습니다. 사용자 문의, 서버 기록, 데이터 상태를 이어 보며 재현 가능한 문제부터 해결합니다.</p></div><div class="experience-list"><div><span class="experience-n">01</span><div><h3>사용자와 가까운 운영</h3><p>고객사와 사찰의 요청을 직접 듣고 사용 흐름을 확인합니다. 개발과 문의 대응을 따로 보지 않고, 반복되는 불편을 기능 개선의 단서로 삼습니다.</p></div></div><div><span class="experience-n">02</span><div><h3>데이터로 좁히는 원인</h3><p>PostgreSQL 쿼리, 서버 로그, Redis와 애플리케이션 상태를 함께 살펴 원인 후보를 줄입니다. 수정 전후의 결과를 확인합니다.</p></div></div><div><span class="experience-n">03</span><div><h3>끝까지 운영하는 개인 프로젝트</h3><p>아이디어를 화면에 구현하는 데서 그치지 않고 데이터 수집, 배포, 성능 측정과 남은 한계를 기록합니다.</p></div></div></div></div></section>
+
+    <section class="section notes-section" id="notes" aria-labelledby="notes-title"><div class="wrap"><div class="section-heading"><div><p class="section-label">03 / NOTES</p><h2 id="notes-title">작업하며 남긴 기록</h2></div><p>해결책만큼 문제를 판단한 근거와 검증 범위를 중요하게 생각합니다.</p></div><div class="notes-grid"><article class="note-card"><span class="note-type">운영 · 문제 해결</span><h3>예약 기능은 예외 상황에서 완성된다</h3><p>기본 흐름이 잘 되는 것만으로는 충분하지 않습니다. 중복 예약, 취소 상태, 결제 이후의 처리처럼 실제 운영에서 자주 만나는 경계 조건을 함께 살핍니다.</p><p class="note-end">확인할 것: 상태 전이 · 중복 방지 · 실패 후 복구</p></article><article class="note-card"><span class="note-type">성능 · 검증</span><h3>빠른 API와 빠른 화면은 다르게 측정한다</h3><p>서버 응답이 빨라져도 사용자가 보는 화면은 늦을 수 있습니다. 첫 접속과 재조회, 개별 요청과 화면 완료를 나눠 측정하고 그 범위를 명확히 적습니다.</p><p class="note-end">확인할 것: cold / warm · 화면 완료 · p50 / p95</p></article></div></div></section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="section-label">04 / CONTACT</p><h2 id="contact-title">함께 이야기해요.</h2><p>운영 중인 서비스를 더 낫게 만드는 일과 새로운 제품을 만드는 일에 관심이 있습니다.</p></div><a class="contact-button" href="https://github.com/nakk3975" target="_blank" rel="noopener noreferrer">GitHub에서 보기 <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 안재원</span><span>Build, observe, improve.</span><a href="#top">맨 위로 ↑</a></div></footer>
+</body>
+</html>
