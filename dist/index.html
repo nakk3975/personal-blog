@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#102035">
-  <meta name="description" content="백엔드·웹 개발자 안재원의 포트폴리오. 운영 서비스의 문제 해결과 개인 프로젝트의 설계·검증 과정을 기록합니다.">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="백엔드·웹 개발자 안재원의 포트폴리오. 템플스테이 운영 경험과 개인 프로젝트의 문제 해결 과정을 기록합니다.">
   <title>안재원 — Backend & Web Developer</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102035'/%3E%3Cpath d='M15 43 27 18h7l-12 25M29 43l12-25h8L37 43' fill='none' stroke='%238bb2ff' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="./styles.css">
@@ -13,83 +13,139 @@
 <body>
   <a class="skip-link" href="#main">본문으로 바로가기</a>
   <header class="site-header" id="top">
-    <div class="header-inner wrap">
-      <a class="brand" href="#top" aria-label="안재원, 맨 위로"><span class="brand-mark">AJW<span class="brand-dot">.</span></span><span class="brand-caption">DEVELOPER / NOTES</span></a>
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="안재원, 맨 위로">AJW<span>.</span></a>
       <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="메뉴 열기"><span></span><span></span></button>
       <nav class="main-nav" id="primary-nav" aria-label="주 메뉴">
-        <a href="#work">프로젝트</a><a href="#experience">경험</a><a href="#notes">기록</a><a href="#contact" class="nav-contact">연락하기 <span aria-hidden="true">↗</span></a>
+        <a href="#work">프로젝트</a>
+        <a href="#experience">경험</a>
+        <a href="#notes">기록</a>
+        <a class="nav-contact" href="#contact">연락하기 <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> 안재원 · BACKEND / WEB DEVELOPER</p>
-          <h1 id="hero-title">운영에서 발견한 문제를<br><em>제품의 개선</em>으로 잇습니다.</h1>
-          <p class="hero-intro">Spring과 PostgreSQL로 서비스를 만들고 운영합니다. 예약·결제 기능부터 관리자 통계, 고객사와 사찰의 문의 대응까지 맡으며, 실제 사용 흐름에서 발견한 문제를 코드와 데이터로 풀어갑니다.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#work">프로젝트 살펴보기 <span aria-hidden="true">↗</span></a><a class="text-link light" href="https://github.com/nakk3975" target="_blank" rel="noopener noreferrer">GitHub 프로필 <span aria-hidden="true">↗</span></a></div>
-          <div class="hero-meta"><span>BASOFT 웹 개발자 · 2024.11—현재</span><span>Spring · MyBatis · PostgreSQL</span></div>
+      <div class="wrap">
+        <p class="eyebrow"><span class="eyebrow-line"></span> 안재원 / BACKEND · WEB DEVELOPER</p>
+        <h1 id="hero-title">사용자 문의에서 출발해,<br><span>코드와 데이터로 답합니다.</span></h1>
+        <p class="hero-intro">예약 서비스의 기능 개발과 운영을 맡고 있습니다. 고객사와 사찰의 문의를 직접 확인하고, 로그·SQL·사용 흐름을 이어 보며 실제 문제를 해결합니다.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#work">프로젝트 보기 <span aria-hidden="true">↗</span></a>
+          <a class="secondary-link" href="https://github.com/nakk3975" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
         </div>
-        <div class="hero-aside" aria-label="주요 작업 영역">
-          <div class="aside-top"><span>FIELD NOTES</span><span>01 / 03</span></div>
-          <div class="aside-main"><span class="aside-kicker">WHAT I WORK ON</span><p>운영 중인 서비스를<br>더 <strong>안정적</strong>이고<br>쓰기 <strong>편하게.</strong></p></div>
-          <div class="aside-bottom"><div><span>01</span><span>예약 · 관리자 기능</span></div><div><span>02</span><span>SQL · 성능 · 장애 분석</span></div><div><span>03</span><span>개인 제품 설계와 배포</span></div></div>
+        <div class="hero-facts">
+          <div><span>현재</span><strong>BASOFT 웹 개발자</strong><small>2024.11 — 현재</small></div>
+          <div><span>주요 분야</span><strong>예약·관리자 기능과 운영</strong><small>Spring · MyBatis · PostgreSQL</small></div>
+          <div><span>개인 작업</span><strong>아이디어부터 배포·검증까지</strong><small>게임 데이터 · 기록 · 여행 플래너</small></div>
         </div>
       </div>
     </section>
 
     <section class="section work-section" id="work" aria-labelledby="work-title">
       <div class="wrap">
-        <div class="section-heading"><div><p class="section-label">01 / SELECTED WORK</p><h2 id="work-title">만들고, 운영하고, 개선한 것들</h2></div><p>무엇을 만들었는지뿐 아니라 문제를 확인하고 결과를 검증한 과정까지 담았습니다.</p></div>
-        <article class="featured-project">
-          <div class="featured-number">01 <span>/ 업무</span></div>
-          <div class="featured-main">
-            <p class="project-overline">SERVICE OPERATIONS · 2024 — 현재</p>
-            <h3>Templestay<br><span>예약 서비스 운영·개선</span></h3>
-            <p>예약 홈페이지와 행정관리 시스템의 기능 개발과 유지보수를 담당합니다. 고객사 요구사항뿐 아니라 사찰의 사용 문의도 직접 받아 업무 흐름을 파악하고, 화면·로그·DB 상태를 대조해 문제를 좁힙니다.</p>
-            <div class="work-cases">
-              <div><span>예약과 결제</span><p>이벤트 참여 조건, 중복 예약, 취소·결제 상태 같은 경계 조건을 확인하고 예약 단계의 동작을 개선합니다. 결제사 처리 결과와 홈페이지 상태가 다를 때에는 두 기록을 구분해 확인합니다.</p></div>
-              <div><span>데이터와 통계</span><p>예약현황·참가자 통계·엑셀 다운로드를 다룹니다. 순인원과 연인원의 집계 기준을 구분하고, 조회 조건과 SQL 결과를 대조해 관리자 화면의 수치를 검증합니다.</p></div>
-              <div><span>운영 대응</span><p>Apache·Tomcat·Redis·Scouter 기록과 문의 시각을 맞춰 원인 후보를 좁힙니다. 확인된 사실과 추가 확인이 필요한 부분을 나눠 설명하고 수정 후 흐름을 다시 살핍니다.</p></div>
-            </div>
-            <div class="tags"><span>Java</span><span>Spring</span><span>MyBatis</span><span>PostgreSQL</span><span>Redis</span><span>Tomcat</span></div>
-          </div>
-          <div class="featured-stamp" aria-hidden="true"><span>OPERATE</span><span>OBSERVE</span><span>IMPROVE</span></div>
-        </article>
-        <div class="project-grid">
-          <article class="project-card"><div class="card-top"><span class="card-index">02 / PERSONAL</span><span class="card-glyph" aria-hidden="true">ER</span></div><h3>EternalReturnGG</h3><p>이터널 리턴의 전적 검색·경기 분석·표본 통계·장비 제작·사냥 동선 계획을 연결한 웹 서비스입니다.</p><div class="card-evidence"><strong>문제와 접근</strong><p>통계 전체 JSON을 화면별 응답으로 나누고 중복 요청 공유와 캐시를 적용했습니다. overview 저장 JSON은 13.84MB에서 0.70MB로 줄었습니다.</p><small>저장 데이터 크기 측정이며, 첫 화면 완료 시간의 개선율은 아닙니다.</small></div><div class="card-footer"><div class="tags"><span>Spring Boot</span><span>JSP</span><span>Supabase</span></div><div class="card-links"><a href="https://github.com/nakk3975/EternalReturnGG" target="_blank" rel="noopener noreferrer">코드 ↗</a><a href="https://eternalreturngg.onrender.com/er/search/view" target="_blank" rel="noopener noreferrer">사이트 ↗</a></div></div></article>
-          <article class="project-card"><div class="card-top"><span class="card-index">03 / PERSONAL</span><span class="card-glyph" aria-hidden="true">GC</span></div><h3>Game Chronicle</h3><p>Steam의 누적 플레이시간만으로는 알기 어려운 날짜별 플레이 기록을 관측해 타임라인과 통계로 보여줍니다.</p><div class="card-evidence"><strong>문제와 접근</strong><p>웹 서버가 쉬는 동안에도 수집을 이어가기 위해 Supabase Cron·Edge Function으로 작업을 분리했습니다. API 오류나 관측 공백은 플레이시간에서 제외합니다.</p><small>Edge 관측 시각 갱신은 확인했고, 15분 이상 유휴 중단 재현은 별도 검증 대상입니다.</small></div><div class="card-footer"><div class="tags"><span>Spring Boot</span><span>React</span><span>Supabase</span></div><div class="card-links"><a href="https://github.com/nakk3975/Game_Chronicle" target="_blank" rel="noopener noreferrer">코드 ↗</a><a href="https://game-chronicle.onrender.com" target="_blank" rel="noopener noreferrer">사이트 ↗</a></div></div></article>
-          <article class="project-card"><div class="card-top"><span class="card-index">04 / PERSONAL</span><span class="card-glyph" aria-hidden="true">OT</span></div><h3>OrbitTrip</h3><p>지구·지도에서 국가를 고른 뒤 여행 기간, 도시와 이미 예약한 이동 시간을 입력해 일차별 추천 동선을 만드는 플래너입니다.</p><div class="card-evidence"><strong>문제와 접근</strong><p>기차와 예약 방문 시각을 고정한 채 남는 시간에 일정을 배치합니다. 결과를 직접 수정하고 이동시간 부족·시간 충돌을 확인할 수 있게 했습니다.</p><small>장소·이동시간은 계획용 데이터이며 실제 예약·운행을 보장하지 않습니다.</small></div><div class="card-footer"><div class="tags"><span>JavaScript</span><span>Node.js</span><span>Neon</span></div><div class="card-links"><a href="https://github.com/nakk3975/OrbitTrip" target="_blank" rel="noopener noreferrer">코드 보기 ↗</a></div></div></article>
+        <div class="section-heading">
+          <p class="section-label">01 / PROJECTS</p>
+          <h2 id="work-title">무엇을 만들고,<br>어떻게 개선했는지</h2>
+          <p>실무와 개인 프로젝트를 구분하고, 제가 맡은 작업과 확인된 결과를 함께 적었습니다.</p>
         </div>
-        <div class="more-work"><div><p class="mini-label">EARLIER WORK</p><h3>이전 프로젝트도 이어집니다.</h3></div><div class="more-work-links"><a href="https://github.com/nakk3975/TripPlan" target="_blank" rel="noopener noreferrer"><strong>TripPlan</strong><span>지도·여행 일정 공유·커뮤니티</span><b aria-hidden="true">↗</b></a><a href="https://github.com/nakk3975/2Team-Workspace" target="_blank" rel="noopener noreferrer"><strong>우리 날씨</strong><span>날씨 API와 지도·위성 데이터 시각화 · 팀 프로젝트</span><b aria-hidden="true">↗</b></a></div></div>
+
+        <article class="featured-case">
+          <div class="case-intro">
+            <span class="index-label">01 / 실무</span>
+            <h3>Templestay</h3>
+            <p class="case-subtitle">예약 홈페이지 · 행정관리 시스템</p>
+            <p class="case-description">예약·결제·이벤트 기능과 관리자 통계의 개발 및 유지보수를 담당합니다. 고객사 요청과 사찰의 사용 문의를 직접 받아 문제를 재현하고, 화면·로그·DB 상태를 대조해 처리합니다.</p>
+            <div class="tags"><span>Java</span><span>Spring</span><span>MyBatis</span><span>PostgreSQL</span><span>Redis</span></div>
+          </div>
+          <div class="case-details">
+            <div class="detail-row"><span>01</span><div><h4>예약과 결제의 경계 조건</h4><p>이벤트 참여 조건, 중복 예약, 취소·결제 상태를 함께 살핍니다. 결제사 처리 결과와 홈페이지 예약 상태가 다를 때에는 두 기록을 분리해 확인합니다.</p></div></div>
+            <div class="detail-row"><span>02</span><div><h4>조회와 집계의 정확성</h4><p>예약현황·참가자 통계·엑셀 다운로드를 다룹니다. 순인원과 연인원의 집계 기준을 구분하고, 조회 조건과 SQL 결과를 대조합니다.</p></div></div>
+            <div class="detail-row"><span>03</span><div><h4>운영 문제 분석과 문의 대응</h4><p>Apache·Tomcat·Redis·Scouter 기록을 문의 시각과 맞춰 원인 후보를 좁힙니다. 확인된 사실과 추가 확인이 필요한 부분을 나눠 설명합니다.</p></div></div>
+          </div>
+        </article>
+
+        <div class="subsection-heading"><h3>개인 프로젝트</h3><p>사용자 흐름을 직접 설계하고 배포하며 남긴 작업입니다.</p></div>
+        <div class="project-list">
+          <article class="project-row">
+            <div class="project-index">02 <span>/ WEB SERVICE</span></div>
+            <div class="project-content">
+              <h4>EternalReturnGG</h4>
+              <p>이터널 리턴의 전적 검색·경기 분석·표본 통계·장비 제작·사냥 동선 계획을 연결한 웹 서비스입니다.</p>
+              <p class="project-result"><strong>개선한 부분</strong> 통계 전체 JSON을 화면별 응답으로 나누고 중복 요청 공유와 캐시를 적용했습니다. overview 저장 JSON은 13.84MB에서 0.70MB로 줄었습니다.</p>
+              <p class="project-caveat">저장 데이터 크기 비교이며 첫 화면 완료 시간의 개선율은 아닙니다.</p>
+              <div class="tags"><span>Spring Boot</span><span>JSP</span><span>Supabase</span></div>
+            </div>
+            <div class="project-links"><a href="https://github.com/nakk3975/EternalReturnGG" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://eternalreturngg.onrender.com/er/search/view" target="_blank" rel="noopener noreferrer">사이트 ↗</a></div>
+          </article>
+          <article class="project-row">
+            <div class="project-index">03 <span>/ WEB SERVICE</span></div>
+            <div class="project-content">
+              <h4>Game Chronicle</h4>
+              <p>Steam 플레이 상태를 관측해 날짜별 게임 타임라인과 통계로 보여주는 서비스입니다.</p>
+              <p class="project-result"><strong>설계한 부분</strong> 웹 서버가 쉬어도 수집할 수 있도록 Supabase Cron·Edge Function으로 작업을 분리했습니다. API 오류나 관측 공백은 플레이시간에서 제외합니다.</p>
+              <p class="project-caveat">Edge 관측 시각 갱신은 확인했고, 15분 이상 유휴 중단 재현은 별도 검증 대상입니다.</p>
+              <div class="tags"><span>Spring Boot</span><span>React</span><span>Supabase</span></div>
+            </div>
+            <div class="project-links"><a href="https://github.com/nakk3975/Game_Chronicle" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://game-chronicle.onrender.com" target="_blank" rel="noopener noreferrer">사이트 ↗</a></div>
+          </article>
+          <article class="project-row">
+            <div class="project-index">04 <span>/ PROTOTYPE</span></div>
+            <div class="project-content">
+              <h4>OrbitTrip</h4>
+              <p>국가와 도시를 탐색하고 여행 기간, 이미 예약한 기차와 방문 시간을 넣어 일차별 동선을 짜는 여행 플래너입니다.</p>
+              <p class="project-result"><strong>설계한 부분</strong> 고정 예약을 유지한 채 남는 시간에 일정을 배치하고, 사용자가 결과를 수정할 때 이동시간 부족과 시간 충돌을 확인할 수 있게 했습니다.</p>
+              <p class="project-caveat">장소·이동시간은 계획용 데이터이며 실제 예약·운행을 보장하지 않습니다.</p>
+              <div class="tags"><span>JavaScript</span><span>Node.js</span><span>Neon</span></div>
+            </div>
+            <div class="project-links"><a href="https://github.com/nakk3975/OrbitTrip" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+          </article>
+        </div>
+        <div class="more-work">
+          <span>이전 작업</span>
+          <a href="https://github.com/nakk3975/TripPlan" target="_blank" rel="noopener noreferrer"><strong>TripPlan</strong><small>지도·여행 일정 공유·커뮤니티</small><b aria-hidden="true">↗</b></a>
+          <a href="https://github.com/nakk3975/2Team-Workspace" target="_blank" rel="noopener noreferrer"><strong>우리 날씨</strong><small>날씨 API · 지도·위성 데이터 시각화 · 팀 프로젝트</small><b aria-hidden="true">↗</b></a>
+        </div>
       </div>
     </section>
 
     <section class="section experience-section" id="experience" aria-labelledby="experience-title">
-      <div class="wrap experience-grid">
-        <div><p class="section-label">02 / EXPERIENCE</p><h2 id="experience-title">코드 밖의 맥락까지<br>읽는 개발자</h2><p class="experience-lead">화면에 보이는 오류와 실제 원인은 다를 때가 많습니다. 사용자 문의, 서버 기록, 데이터 상태를 이어 보며 재현 가능한 문제부터 해결합니다.</p><div class="role-card"><span>2024.11 — 현재</span><strong>BASOFT · 웹 개발자</strong><p>템플스테이 예약 홈페이지·행정관리 시스템을 담당하고, 서울시 중소기업 워라밸 포인트제 사이트 개발에도 참여했습니다.</p></div></div>
-        <div class="experience-list">
-          <div><span class="experience-n">01</span><div><h3>요청을 기능으로 옮기는 과정</h3><p>고객사와 사찰의 문의를 직접 확인합니다. 현재 화면과 업무 흐름을 먼저 파악한 뒤 정책 조건과 예외 상황을 정리해 예약·이벤트·관리자 기능에 반영합니다.</p></div></div>
-          <div><span class="experience-n">02</span><div><h3>데이터를 기준으로 한 검증</h3><p>MyBatis SQL과 PostgreSQL 조회 조건을 살피고, 집계 기준이 다른 수치를 구분합니다. 관리자 화면과 엑셀 결과를 실제 데이터와 대조합니다.</p></div></div>
-          <div><span class="experience-n">03</span><div><h3>운영 환경에서의 문제 분석</h3><p>Apache·Tomcat·Redis·Scouter의 시간 흐름을 비교해 장애 범위를 좁힙니다. 원인이 확정되지 않은 경우에는 관측 사실과 가능성을 구분해 공유합니다.</p></div></div>
-          <div><span class="experience-n">04</span><div><h3>설계에서 배포까지의 개인 작업</h3><p>Spring 기반 서비스와 React·JavaScript 화면을 만들고 Render·Supabase·Neon에 연결합니다. 완료된 동작과 아직 검증하지 못한 조건을 저장소에 함께 기록합니다.</p></div></div>
+      <div class="wrap">
+        <div class="section-heading compact-heading"><p class="section-label">02 / EXPERIENCE</p><h2 id="experience-title">운영 현장에서 배운 개발</h2><p>기능이 배포된 뒤에도 어떻게 쓰이는지 확인합니다.</p></div>
+        <div class="experience-grid">
+          <div class="role-block"><span>2024.11 — 현재</span><h3>BASOFT · 웹 개발자</h3><p>템플스테이 예약 홈페이지와 행정관리 시스템을 담당하며 서울시 중소기업 워라밸 포인트제 사이트 개발에도 참여했습니다.</p></div>
+          <div class="experience-list">
+            <div><span>01</span><div><h3>요청을 기능으로 옮기기</h3><p>고객사와 사찰의 문의를 직접 확인하고, 업무 흐름·정책 조건·예외 상황을 정리해 예약·이벤트·관리자 기능에 반영합니다.</p></div></div>
+            <div><span>02</span><div><h3>데이터를 기준으로 검증하기</h3><p>MyBatis SQL과 PostgreSQL 조회 조건을 살피고 관리자 화면과 엑셀 결과를 실제 데이터와 대조합니다.</p></div></div>
+            <div><span>03</span><div><h3>원인이 불명확할 때 범위 좁히기</h3><p>서버 기록의 시간 흐름을 비교하고, 관측된 사실과 원인 후보를 구분해 다음 확인 작업을 정합니다.</p></div></div>
+          </div>
         </div>
+        <div class="stack-strip"><div><span>주로 사용하는 기술</span><p>Java · Spring · MyBatis · PostgreSQL · JavaScript · JSP</p></div><div><span>운영과 개인 프로젝트에서 경험</span><p>Redis · Tomcat · Apache · Scouter · React · Svelte 5 · Supabase · Neon · Render</p></div></div>
       </div>
-      <div class="wrap stack-strip"><span>주로 사용하는 기술</span><p>Java · Spring · MyBatis · PostgreSQL · JavaScript · JSP</p><span>운영과 개인 프로젝트에서 경험</span><p>Redis · Tomcat · Apache · Scouter · React · Svelte 5 · Supabase · Neon · Render</p></div>
     </section>
 
-    <section class="section notes-section" id="notes" aria-labelledby="notes-title"><div class="wrap">
-      <div class="section-heading"><div><p class="section-label">03 / FIELD NOTES</p><h2 id="notes-title">작업하며 남긴 기록</h2></div><p>해결책만큼 문제를 판단한 근거와 검증 범위를 중요하게 생각합니다.</p></div>
-      <div class="notes-grid">
-        <article class="note-card"><span class="note-type">운영 · 예약 흐름</span><h3>예약 기능은 예외 상황에서 완성된다</h3><p>정상 예약만 확인하면 취소·대기·결제처럼 여러 상태가 만나는 순간을 놓치기 쉽습니다.</p><details><summary>기록 읽기 <span aria-hidden="true">↘</span></summary><div class="note-body"><p>예약 정책을 바꿀 때에는 화면에 표시되는 인원과 실제 예약 상태별 집계를 함께 확인합니다. 대기와 완료를 어떤 조건에서 포함하는지, 취소된 건은 다시 신청할 수 있는지, 한 사람의 중복 신청을 어떻게 판단하는지가 결과를 바꿉니다.</p><p>결제 문의는 홈페이지의 예약 상태와 결제사의 승인·취소 결과를 별도로 확인합니다. 한쪽 기록만 보고 처리 완료라고 단정하지 않고, 어디까지 처리됐는지 확인한 뒤 필요한 관리자 경로를 안내합니다.</p><p>기능 수정 후에는 정상 경로뿐 아니라 중복 요청, 취소 후 재시도, 화면과 관리자 데이터의 일치 여부를 살펴봅니다.</p></div></details><p class="note-end">핵심: 상태 전이 · 중복 방지 · 결제 결과 대조</p></article>
-        <article class="note-card"><span class="note-type">성능 · 측정</span><h3>빠른 API와 빠른 화면은 다르게 측정한다</h3><p>서버 응답이 빨라졌다는 사실만으로 사용자가 보는 화면이 빨라졌다고 말할 수는 없습니다.</p><details><summary>기록 읽기 <span aria-hidden="true">↘</span></summary><div class="note-body"><p>EternalReturnGG에서는 화면마다 필요한 통계 응답을 나눠 overview 저장 JSON을 약 13.84MB에서 0.70MB로 줄였습니다. 이는 저장된 응답 크기 비교이며 모든 화면의 로딩 시간 개선을 뜻하지 않습니다.</p><p>서버가 깨어 있고 연결을 재사용한 일부 통계 API는 0.361~0.555초로 관측했습니다. 첫 접속, 브라우저의 화면 완료, p50·p95는 별개의 측정입니다. Render 절전 후 첫 요청을 포함해 모든 메뉴가 1초 안에 완료된다는 목표는 아직 검증되지 않았습니다.</p><p>측정 조건을 함께 기록해야 다음 개선이 어디에 필요한지 알 수 있습니다. <a href="https://github.com/nakk3975/EternalReturnGG#성능-개선과-남는-한계" target="_blank" rel="noopener noreferrer">프로젝트 검증 범위 ↗</a></p></div></details><p class="note-end">핵심: cold / warm · 화면 완료 · 측정 조건</p></article>
-        <article class="note-card"><span class="note-type">설계 · 데이터 수집</span><h3>서버가 쉬는 동안의 기록은 누가 남길까</h3><p>Game Chronicle에서는 웹 서버와 플레이 상태 수집의 실행 주체를 분리했습니다.</p><details><summary>기록 읽기 <span aria-hidden="true">↘</span></summary><div class="note-body"><p>Render의 무료 웹 서버가 유휴 상태로 쉬면 서버 안의 스케줄러도 함께 멈출 수 있습니다. 로그인과 조회는 웹 서버에 남기고, 1분 주기의 관측은 Supabase Cron과 Edge Function으로 옮겼습니다.</p><p>Steam API가 실패하거나 관측이 비는 시간을 플레이시간으로 채우지 않습니다. 시작과 종료는 인접한 관측으로 추정하고, 사용자가 수집을 중지하면 저장 직전에도 동의 상태를 다시 확인합니다.</p><p>전환 뒤 Edge 관측 시각이 갱신된 것은 확인했습니다. 실제 15분 이상 무접속 상태를 재현한 검증은 별도로 남아 있습니다. <a href="https://github.com/nakk3975/Game_Chronicle#핵심-설계와-문제-해결" target="_blank" rel="noopener noreferrer">설계 기록 ↗</a></p></div></details><p class="note-end">핵심: 수집 주체 분리 · 관측 공백 · 동의 확인</p></article>
+    <section class="section notes-section" id="notes" aria-labelledby="notes-title">
+      <div class="wrap">
+        <div class="section-heading compact-heading"><p class="section-label">03 / NOTES</p><h2 id="notes-title">작업하며 남긴 기록</h2><p>해결책과 함께 판단 근거, 측정 조건, 남은 한계를 기록합니다.</p></div>
+        <div class="notes-list">
+          <article class="note-row">
+            <div><span class="note-type">운영 · 예약 흐름</span><h3>예약 기능은 예외 상황에서 완성된다</h3></div>
+            <div class="note-content"><p>정상 예약만 확인하면 취소·대기·결제가 만나는 순간을 놓치기 쉽습니다.</p><details><summary>기록 읽기 <span aria-hidden="true">+</span></summary><div class="note-body"><p>예약 정책을 바꿀 때에는 화면에 표시되는 인원과 실제 예약 상태별 집계를 함께 확인합니다. 대기와 완료를 어떤 조건에서 포함하는지, 취소된 건은 다시 신청할 수 있는지, 중복 신청을 어떻게 판단하는지가 결과를 바꿉니다.</p><p>결제 문의는 홈페이지의 예약 상태와 결제사의 승인·취소 결과를 별도로 확인합니다. 한쪽 기록만 보고 처리 완료라고 단정하지 않고, 어디까지 처리됐는지 확인한 뒤 필요한 관리자 경로를 안내합니다.</p><p>기능 수정 후에는 중복 요청, 취소 후 재시도, 화면과 관리자 데이터의 일치 여부도 살핍니다.</p></div></details></div>
+          </article>
+          <article class="note-row">
+            <div><span class="note-type">성능 · 측정</span><h3>빠른 API와 빠른 화면은 다르게 측정한다</h3></div>
+            <div class="note-content"><p>서버 응답이 빨라졌다는 사실만으로 화면 완료가 빨라졌다고 말할 수는 없습니다.</p><details><summary>기록 읽기 <span aria-hidden="true">+</span></summary><div class="note-body"><p>EternalReturnGG에서는 화면마다 필요한 통계 응답을 나눠 overview 저장 JSON을 약 13.84MB에서 0.70MB로 줄였습니다. 이는 저장된 응답 크기 비교이며 모든 화면의 로딩 시간 개선을 뜻하지 않습니다.</p><p>서버가 깨어 있고 연결을 재사용한 일부 통계 API는 0.361~0.555초로 관측했습니다. 첫 접속, 브라우저 화면 완료, p50·p95는 별개의 측정입니다. 절전 후 첫 요청을 포함해 모든 메뉴가 1초 안에 완료된다는 목표는 아직 검증되지 않았습니다.</p><p>측정 조건을 함께 기록해야 다음 개선이 어디에 필요한지 알 수 있습니다. <a href="https://github.com/nakk3975/EternalReturnGG#성능-개선과-남는-한계" target="_blank" rel="noopener noreferrer">프로젝트 검증 범위 ↗</a></p></div></details></div>
+          </article>
+          <article class="note-row">
+            <div><span class="note-type">설계 · 데이터 수집</span><h3>서버가 쉬는 동안의 기록은 누가 남길까</h3></div>
+            <div class="note-content"><p>Game Chronicle에서는 웹 서버와 플레이 상태 수집의 실행 주체를 분리했습니다.</p><details><summary>기록 읽기 <span aria-hidden="true">+</span></summary><div class="note-body"><p>Render의 무료 웹 서버가 유휴 상태로 쉬면 서버 안의 스케줄러도 함께 멈출 수 있습니다. 로그인과 조회는 웹 서버에 남기고, 1분 주기의 관측은 Supabase Cron과 Edge Function으로 옮겼습니다.</p><p>Steam API가 실패하거나 관측이 비는 시간을 플레이시간으로 채우지 않습니다. 시작과 종료는 인접한 관측으로 추정하고, 사용자가 수집을 중지하면 저장 직전에도 동의 상태를 다시 확인합니다.</p><p>전환 뒤 Edge 관측 시각이 갱신된 것은 확인했습니다. 실제 15분 이상 무접속 상태를 재현한 검증은 별도로 남아 있습니다. <a href="https://github.com/nakk3975/Game_Chronicle#핵심-설계와-문제-해결" target="_blank" rel="noopener noreferrer">설계 기록 ↗</a></p></div></details></div>
+          </article>
+        </div>
       </div>
-    </div></section>
+    </section>
 
-    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="section-label">04 / CONTACT</p><h2 id="contact-title">함께 이야기해요.</h2><p>운영 중인 서비스를 더 낫게 만드는 일과 새로운 제품을 만드는 일에 관심이 있습니다.</p></div><a class="contact-button" href="https://github.com/nakk3975" target="_blank" rel="noopener noreferrer">GitHub에서 보기 <span aria-hidden="true">↗</span></a></div></section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="wrap contact-grid"><div><p class="section-label">04 / CONTACT</p><h2 id="contact-title">함께 이야기해요.</h2><p>운영 중인 서비스를 개선하는 일과 새로운 제품을 만드는 일에 관심이 있습니다.</p></div><a class="contact-link" href="https://github.com/nakk3975" target="_blank" rel="noopener noreferrer">GitHub에서 보기 <span aria-hidden="true">↗</span></a></div></section>
   </main>
   <footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 안재원</span><span>Build, observe, improve.</span><a href="#top">맨 위로 ↑</a></div></footer>
 </body>
