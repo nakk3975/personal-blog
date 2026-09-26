@@ -81,6 +81,12 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .detail-row > span { color: var(--blue-dark); font-size: .76rem; font-weight: 760; padding-top: 4px; }
 .detail-row h4 { margin: 0 0 6px; font-size: 1.1rem; letter-spacing: -.03em; line-height: 1.35; }
 .detail-row p { color: var(--muted); font-size: .94rem; line-height: 1.75; margin: 0; }
+.supporting-case { display: grid; grid-template-columns: 148px minmax(0, 1fr) auto; align-items: center; gap: 20px; margin-top: 12px; padding: 23px 30px; background: #fff; border: 1px solid #d5dfec; border-radius: 10px; }
+.supporting-case-label { color: var(--blue-dark); font-size: .79rem; font-weight: 760; }
+.supporting-case h3 { margin: 0 0 5px; font-size: 1.3rem; line-height: 1.38; letter-spacing: -.035em; }
+.supporting-case p { color: var(--muted); font-size: .92rem; margin: 0; }
+.supporting-case a { color: var(--blue-dark); font-size: .88rem; font-weight: 740; white-space: nowrap; }
+.supporting-case a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
 .subsection-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 24px; padding: 58px 0 17px; }
 .subsection-heading h3 { font-size: 1.65rem; letter-spacing: -.045em; margin: 0; }
@@ -229,6 +235,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .project-links { grid-column: 2; flex-direction: row; align-items: center; gap: 22px; }
   .more-work { grid-template-columns: 1fr; }
   .note-row { grid-template-columns: 1fr; gap: 12px; }
+  .supporting-case { grid-template-columns: 1fr; align-items: start; gap: 6px; }
+  .supporting-case a { margin-top: 7px; }
   .detail-hero .wrap { padding-bottom: 62px; }
   .directory-grid { grid-template-columns: 1fr 1fr; }
   .directory-group:first-child { grid-column: 1 / -1; }
@@ -257,6 +265,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .section-heading h2 br { display: none; }
   .case-intro h3 { font-size: 2.45rem; }
   .featured-case { padding: 27px 22px; }
+  .supporting-case { padding: 23px 22px; }
   .subsection-heading { display: block; }
   .subsection-heading p { margin-top: 5px; }
   .project-row { grid-template-columns: 1fr; gap: 9px; padding: 25px 22px; }
