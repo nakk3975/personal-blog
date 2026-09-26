@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eaf0f8">
+  <meta name="description" content="안재원의 실무·개인·팀 프로젝트 상세 기록. 담당 범위와 문제 해결 과정을 프로젝트별로 정리했습니다.">
+  <title>프로젝트 상세 — 안재원</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102035'/%3E%3Cpath d='M15 43 27 18h7l-12 25M29 43l12-25h8L37 43' fill='none' stroke='%238bb2ff' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css?v=20260926-5">
+  <script src="./script.js" defer></script>
+</head>
+<body class="detail-page">
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="./index.html" aria-label="안재원, 첫 화면으로">AJW<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-controls="primary-nav" aria-expanded="false" aria-label="메뉴 열기"><span></span><span></span></button>
+      <nav class="main-nav" id="primary-nav" aria-label="주 메뉴">
+        <a href="./index.html">첫 화면</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#notes">작업 기록</a>
+        <a class="nav-contact" href="./index.html#contact">연락하기 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="detail-hero" aria-labelledby="detail-title">
+      <div class="wrap">
+        <a class="back-link" href="./index.html">← 첫 화면으로</a>
+        <p class="eyebrow"><span class="eyebrow-line"></span> PROJECTS / DEEP DIVE</p>
+        <h1 id="detail-title">만든 것과<br><span>그 안에서 맡은 일</span></h1>
+        <p>첫 화면에 담지 못한 구현 범위와 판단 과정을 정리했습니다. 팀 작업은 제가 담당한 기능을 중심으로 적었습니다.</p>
+      </div>
+    </section>
+
+    <section class="detail-directory" id="projects" aria-labelledby="directory-title">
+      <div class="wrap">
+        <div class="directory-heading"><span class="section-label">CONTENTS</span><h2 id="directory-title">프로젝트 찾아보기</h2></div>
+        <div class="directory-grid">
+          <div class="directory-group"><span>실무</span><a href="#templestay">Templestay <span aria-hidden="true">↗</span></a></div>
+          <div class="directory-group"><span>개인 프로젝트</span><a href="#eternalreturngg">EternalReturnGG <span aria-hidden="true">↗</span></a><a href="#game-chronicle">Game Chronicle <span aria-hidden="true">↗</span></a><a href="#orbittrip">OrbitTrip <span aria-hidden="true">↗</span></a></div>
+          <div class="directory-group"><span>이전 작업</span><a href="#tripplan">TripPlan <span aria-hidden="true">↗</span></a><a href="#weather">우리 날씨 <span aria-hidden="true">↗</span></a><a href="#twproject">TWProject <span aria-hidden="true">↗</span></a><a href="#movie">영화 예매 사이트 <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-section" aria-labelledby="featured-detail-title">
+      <div class="wrap">
+        <div class="detail-section-heading"><span class="section-label">01 / CURRENT WORK</span><h2 id="featured-detail-title">지금 하는 일</h2></div>
+        <article class="deep-case" id="templestay">
+          <div class="deep-aside"><span class="deep-kind">실무 · 2024.11 — 현재</span><h3>Templestay</h3><p>예약 홈페이지와 행정관리 시스템</p><div class="tags"><span>Spring</span><span>MyBatis</span><span>PostgreSQL</span><span>JSP</span></div></div>
+          <div class="deep-body">
+            <p class="deep-lead">사용자 예약 화면과 운영자 관리 화면을 함께 보며 예약·결제·이벤트 기능을 개발하고 운영합니다.</p>
+            <div class="deep-point"><h4>기능과 정책을 연결</h4><p>고객사와 사찰의 요청을 받아 참여 조건, 인원 제한, 중복 신청, 취소 후 재신청 같은 예외를 확인합니다. 화면 동작과 DB 상태가 같은 정책을 표현하는지 살피며 예약·이벤트 기능을 수정합니다.</p></div>
+            <div class="deep-point"><h4>데이터와 운영 기록 확인</h4><p>관리자 조회와 엑셀 출력의 조건, 상태별 집계 기준을 SQL과 실제 데이터로 대조합니다. 결제 문의에서는 예약 상태와 결제사의 처리 기록을 구분해 확인하고, 장애 조사에서는 로그의 시간 흐름으로 범위를 좁힙니다.</p></div>
+            <div class="deep-point"><h4>함께 참여한 작업</h4><p>서울시 중소기업 워라밸 포인트제 사이트 개발에도 참여했습니다. 비공개 업무의 내부 화면과 수치는 공개하지 않습니다.</p></div>
+            <div class="deep-actions"><a href="#note-reservation">예약·결제 판단 기록 ↗</a><a href="https://github.com/nakk3975/TripPlan/blob/main/PORTFOLIO.md" target="_blank" rel="noopener noreferrer">공개 경력 기록 ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="detail-section detail-section-alt" aria-labelledby="personal-detail-title">
+      <div class="wrap">
+        <div class="detail-section-heading"><span class="section-label">02 / PERSONAL PROJECTS</span><h2 id="personal-detail-title">직접 만든 서비스</h2></div>
+        <article class="deep-case" id="eternalreturngg">
+          <div class="deep-aside"><span class="deep-kind">게임 데이터 서비스</span><h3>EternalReturnGG</h3><p>전적·경기·표본 통계와 제작·동선 도구</p><div class="tags"><span>Spring Boot</span><span>JSP</span><span>Supabase</span></div></div>
+          <div class="deep-body">
+            <p class="deep-lead">전적 검색에서 경기 분석, 표본 통계, 아이템 제작, 사냥 동선 계획으로 이어지는 화면을 만들었습니다.</p>
+            <div class="deep-point"><h4>필요한 데이터만 요청</h4><p>큰 통계 응답을 overview·아이템·캐릭터 데이터로 나눠 화면별로 호출합니다. 중복 요청 공유와 캐시를 적용해 같은 데이터를 불필요하게 반복 조회하지 않도록 했습니다.</p></div>
+            <div class="deep-point"><h4>측정 범위를 명확히</h4><p>overview 저장 JSON은 13,844,802바이트에서 702,979바이트로 줄었습니다. 깨어 있는 서버에서 연결을 재사용한 일부 API 응답은 0.361~0.555초로 관측했습니다. 첫 접속과 브라우저 화면 완료 시간은 이 수치에 포함되지 않습니다.</p></div>
+            <div class="deep-actions"><a href="https://eternalreturngg.onrender.com/er/search/view" target="_blank" rel="noopener noreferrer">서비스 열기 ↗</a><a href="https://github.com/nakk3975/EternalReturnGG" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#note-performance">측정 기록 ↗</a></div>
+          </div>
+        </article>
+        <article class="deep-case" id="game-chronicle">
+          <div class="deep-aside"><span class="deep-kind">플레이 기록 서비스</span><h3>Game Chronicle</h3><p>Steam 플레이 상태를 날짜별 타임라인으로</p><div class="tags"><span>Spring Boot</span><span>React</span><span>Supabase</span></div></div>
+          <div class="deep-body">
+            <p class="deep-lead">Steam 로그인으로 계정을 연결하고, 관측한 플레이 상태를 타임라인과 통계로 볼 수 있게 만들었습니다.</p>
+            <div class="deep-point"><h4>웹 요청과 수집 분리</h4><p>로그인과 조회는 Render 웹 서버가 맡고, 1분 주기 관측은 Supabase Cron·Edge Function으로 옮겼습니다. 웹 서버가 유휴 상태일 때 수집이 멈출 수 있는 구조를 바꾼 것입니다.</p></div>
+            <div class="deep-point"><h4>기록의 빈 곳을 그대로</h4><p>Steam API 실패나 관측 공백을 플레이시간으로 채우지 않습니다. 시작·종료는 인접 관측으로 추정하고, 사용자가 수집을 중지했다면 저장 직전에 동의 상태를 다시 확인합니다. 전환 후 관측 시각 갱신은 확인했으며 긴 무접속 재현은 별도 검증 대상으로 남았습니다.</p></div>
+            <div class="deep-actions"><a href="https://game-chronicle.onrender.com" target="_blank" rel="noopener noreferrer">서비스 열기 ↗</a><a href="https://github.com/nakk3975/Game_Chronicle" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="#note-collection">수집 설계 기록 ↗</a></div>
+          </div>
+        </article>
+        <article class="deep-case" id="orbittrip">
+          <div class="deep-aside"><span class="deep-kind">여행 계획 프로토타입</span><h3>OrbitTrip</h3><p>이미 확정한 일정과 자유 시간을 함께 배치</p><div class="tags"><span>JavaScript</span><span>Node.js</span><span>Neon</span></div></div>
+          <div class="deep-body">
+            <p class="deep-lead">지구본과 국가·도시 검색으로 여행지를 탐색하고, 기간에 맞는 일차별 계획을 편집하는 프로토타입입니다.</p>
+            <div class="deep-point"><h4>확정한 일정을 기준점으로</h4><p>이미 예약한 방문 시간이나 기차 이동을 고정한 뒤 남은 시간에 장소를 배치합니다. 이동·대기 시간을 고려해 충돌을 표시하고 사용자가 직접 일정을 고칠 수 있게 설계했습니다.</p></div>
+            <div class="deep-point"><h4>계획값의 한계</h4><p>장소·경로 데이터와 예상 시간은 여행 계획을 돕기 위한 값입니다. 실제 예약 여부와 현지 이동 시간을 보장하는 정보로 표현하지 않습니다.</p></div>
+            <div class="deep-actions"><a href="https://github.com/nakk3975/OrbitTrip" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="detail-section" id="past-work" aria-labelledby="past-detail-title">
+      <div class="wrap">
+        <div class="detail-section-heading"><span class="section-label">03 / EARLIER WORK</span><h2 id="past-detail-title">이전 작업과 팀 기여</h2><p>팀 프로젝트는 전체 서비스가 아니라 제가 구현한 기능을 기준으로 적었습니다.</p></div>
+        <article class="deep-case" id="tripplan">
+          <div class="deep-aside"><span class="deep-kind">개인 프로젝트</span><h3>TripPlan</h3><p>여행지 탐색·일정 공유·커뮤니티</p><div class="tags"><span>Spring Boot</span><span>MyBatis</span><span>MySQL</span><span>JSP</span></div></div>
+          <div class="deep-body">
+            <p class="deep-lead">관광지를 지도에서 찾고, 여행 일정을 만든 뒤 함께 볼 사람과 공유할 수 있는 서비스입니다.</p>
+            <div class="deep-point"><h4>여행 흐름 구현</h4><p>지도 위 관광지 마커와 상세 정보, 일정 공유·초대 흐름을 구현했습니다. 게시글·댓글·좋아요가 있는 커뮤니티와 관리자 접근 기능도 연결했습니다.</p></div>
+            <div class="deep-actions"><a href="https://github.com/nakk3975/TripPlan" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+          </div>
+        </article>
+        <article class="deep-case" id="weather">
+          <div class="deep-aside"><span class="deep-kind">팀 프로젝트 · 담당 기능</span><h3>우리 날씨</h3><p>날씨 지도·예보 화면과 회원 기능</p><div class="tags"><span>JavaScript</span><span>Naver Map</span><span>기상청 API</span></div></div>
+          <div class="deep-body">
+            <p class="deep-lead">지도에서 지역을 고른 뒤 날씨를 확인하는 흐름과 일부 회원 화면을 맡았습니다.</p>
+            <div class="deep-point"><h4>지도에서 예보로</h4><p>하드코딩한 메인 화면을 네이버 지도 오버레이와 기상청 단기예보 API로 바꾸고, 시·도와 도시 선택을 연결했습니다. 지도 확대 수준에 따라 지역 마커를 보여주고 도시를 누르면 해당 날씨를 불러오도록 작업했습니다.</p></div>
+            <div class="deep-point"><h4>시각화와 회원 화면</h4><p>현재·단기·주간 예보와 날짜별 날씨, 시간대별 기온 그래프를 구성했습니다. 로그인·회원가입·아이디 찾기·비밀번호 변경과 로그인 상태에 따른 헤더 동작도 작업했습니다.</p></div>
+            <div class="deep-actions"><a href="https://github.com/nakk3975/2Team-Workspace" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+          </div>
+        </article>
+        <article class="deep-case" id="twproject">
+          <div class="deep-aside"><span class="deep-kind">팀 프로젝트 · 담당 기능</span><h3>TWProject</h3><p>커뮤니티 알림과 고객센터</p><div class="tags"><span>Spring</span><span>JavaScript</span><span>DB 연동</span></div></div>
+          <div class="deep-body">
+            <p class="deep-lead">치지직 커뮤니티의 알림과 문의·FAQ 흐름을 담당했습니다.</p>
+            <div class="deep-point"><h4>알림</h4><p>댓글·답글·좋아요 알림을 연결하고 개별 읽음, 전체 읽음, 읽지 않은 수 표시를 작업했습니다. 좋아요 알림 조회 과정의 오류도 수정했습니다.</p></div>
+            <div class="deep-point"><h4>고객센터</h4><p>이미지 첨부가 가능한 문의 작성, 답변 상태와 탭별 조회, 페이지네이션을 구현했습니다. FAQ도 DB 데이터로 조회하도록 연결했습니다.</p></div>
+            <div class="deep-actions"><a href="https://github.com/HyungJu89/TWProject" target="_blank" rel="noopener noreferrer">팀 저장소 ↗</a></div>
+          </div>
+        </article>
+        <article class="deep-case" id="movie">
+          <div class="deep-aside"><span class="deep-kind">팀 프로젝트 · 담당 기능</span><h3>영화 예매 사이트</h3><p>상영 선택과 좌석 선택 화면</p><div class="tags"><span>Java</span><span>JPA</span><span>JavaScript</span></div></div>
+          <div class="deep-body">
+            <p class="deep-lead">영화·극장·날짜 선택부터 좌석을 고르는 예매 흐름을 담당했습니다.</p>
+            <div class="deep-point"><h4>상영 정보 선택</h4><p>영화 목록 API와 영화·극장·날짜 선택 화면을 연결하고, JPA 기반 DB·Repository 작업에 참여했습니다.</p></div>
+            <div class="deep-point"><h4>좌석 선택</h4><p>극장별 좌석의 행·열 정보를 반영하고 최대 4명까지 인원을 선택하도록 구성했습니다. 인원에 맞춘 좌석 제한과 인접 좌석 자동 선택, 선택 해제 동작을 작업했습니다. 결제 단계는 화면 마크업 작업 범위입니다.</p></div>
+            <div class="deep-actions"><a href="https://github.com/Lowlist/soldeskMovieSite" target="_blank" rel="noopener noreferrer">팀 저장소 ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="detail-section detail-section-alt" id="notes" aria-labelledby="detail-notes-title">
+      <div class="wrap">
+        <div class="detail-section-heading"><span class="section-label">04 / WORK NOTES</span><h2 id="detail-notes-title">판단과 검증의 기록</h2></div>
+        <div class="deep-notes">
+          <article class="deep-note" id="note-reservation"><span class="note-type">운영 · 예약 흐름</span><h3>예약 기능은 예외 상황에서 완성된다</h3><p>예약 정책을 바꿀 때 화면의 인원 표시와 실제 예약 상태별 집계를 함께 확인합니다. 대기와 완료를 어떤 조건에서 포함할지, 취소된 건이 다시 신청할 수 있는지, 중복 신청을 어떻게 판단할지가 결과를 바꿉니다.</p><p>결제 문의는 홈페이지 예약 상태와 결제사의 승인·취소 결과를 따로 확인합니다. 한쪽 기록만 보고 완료로 단정하지 않고, 수정 뒤에는 중복 요청과 취소 후 재시도, 화면과 관리자 데이터의 일치 여부를 살핍니다.</p></article>
+          <article class="deep-note" id="note-performance"><span class="note-type">성능 · 측정</span><h3>빠른 API와 빠른 화면은 다르게 측정한다</h3><p>EternalReturnGG의 overview 저장 JSON은 약 13.84MB에서 0.70MB로 줄었습니다. 이는 저장된 응답 크기의 비교이며 모든 화면의 로딩 시간 개선을 뜻하지 않습니다.</p><p>서버가 깨어 있고 연결을 재사용한 일부 API를 0.361~0.555초로 관측했습니다. 첫 접속, 브라우저 화면 완료, p50·p95는 각각 별개의 측정입니다. 절전 후 첫 요청을 포함해 모든 메뉴가 1초 안에 완료된다는 목표는 아직 검증되지 않았습니다.</p><a href="https://github.com/nakk3975/EternalReturnGG#성능-개선과-남는-한계" target="_blank" rel="noopener noreferrer">측정 조건 자세히 보기 ↗</a></article>
+          <article class="deep-note" id="note-collection"><span class="note-type">설계 · 데이터 수집</span><h3>서버가 쉬는 동안의 기록은 누가 남길까</h3><p>Render 웹 서버가 유휴 상태로 쉬면 서버 안의 스케줄러도 멈출 수 있습니다. Game Chronicle은 로그인·조회와 1분 주기의 Steam 상태 관측을 분리해 관측을 Supabase Cron·Edge Function으로 옮겼습니다.</p><p>API 실패나 관측 공백을 플레이시간으로 채우지 않고, 인접 관측으로 시작·종료를 추정합니다. 수집 중지 시 저장 직전에도 동의를 확인합니다. 전환 뒤 Edge 관측 시각 갱신은 확인했으며 실제 15분 이상 무접속 재현은 남아 있습니다.</p><a href="https://github.com/nakk3975/Game_Chronicle#핵심-설계와-문제-해결" target="_blank" rel="noopener noreferrer">설계 기록 자세히 보기 ↗</a></article>
+        </div>
+        <a class="return-home" href="./index.html">← 첫 화면으로 돌아가기</a>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 안재원</span><span>Build, observe, improve.</span><a href="#top">맨 위로 ↑</a></div></footer>
+</body>
+</html>
