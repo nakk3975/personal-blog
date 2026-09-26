@@ -49,12 +49,14 @@
       <div class="wrap">
         <div class="detail-section-heading"><span class="section-label">01 / CURRENT WORK</span><h2 id="featured-detail-title">지금 하는 일</h2><p>세 사이트 모두 PostgreSQL·Tomcat 환경에서 운영합니다.</p></div>
         <article class="deep-case" id="templestay">
-          <div class="deep-aside"><span class="deep-kind">실무 · 2024.11 — 현재</span><h3>Templestay 예약 홈페이지</h3><p>JSP 기반 사용자 예약 사이트</p><div class="tags"><span>Spring</span><span>JSP</span><span>MyBatis</span><span>PostgreSQL</span><span>Tomcat</span></div></div>
+          <div class="deep-aside"><span class="deep-kind">실무 · 2024.11 — 현재</span><h3>Templestay 예약 홈페이지</h3><p>JSP 기반 사용자 예약 사이트</p><div class="tags"><span>Spring</span><span>JSP</span><span>MyBatis</span><span>PostgreSQL</span><span>Tomcat</span><span>Redis</span><span>Scouter</span><span>GA4</span></div></div>
           <div class="deep-body">
-            <p class="deep-lead">기존에 개발된 JSP 예약 홈페이지를 인수해 오픈 초기 기능을 안정화했습니다. 이후 예약·결제·이벤트의 개선과 운영, 고객사·사찰 문의 응대를 맡고 있습니다.</p>
+            <p class="deep-lead">기존에 개발된 JSP 예약 홈페이지를 인수해 오픈 초기 기능을 안정화했습니다. 이후 새 기능 개발과 결제 전환, 이벤트 트래픽 대응, 고객사·사찰 문의까지 맡고 있습니다.</p>
             <div class="deep-point"><h4>오픈 초기 안정화</h4><p>개발 완료 상태로 전달받은 서비스에서 주요 기능의 동작 오류가 이어졌습니다. 화면·로그·DB 상태를 대조해 예약·결제·이벤트 흐름의 문제를 재현하고 수정하며 운영을 안정화했습니다.</p></div>
             <div class="deep-point"><h4>코드 구조의 단계적 정리</h4><p>초기 코드에는 하드코딩된 값과 컨트롤러에 집중된 업무 로직이 많았고, 서비스의 트랜잭션 선언과 실제 처리 위치도 분리돼 있었습니다. 운영 중인 기능을 수정하면서 하드코딩과 컨트롤러·서비스의 책임을 단계적으로 정리했습니다.</p></div>
+            <div class="deep-point"><h4>운영 기능 확장</h4><p>안정화 이후 통계 조회, GA4 적용, 이미지 관리, 이벤트 관리 기능을 추가했습니다. 접수된 요구사항을 화면과 데이터 흐름에 반영하며 운영 기능을 보완했습니다.</p></div>
             <div class="deep-point"><h4>결제 연동 전환</h4><p>기존 이니시스 연동을 토스페이먼츠로 전환했습니다. 결제사의 승인·취소 결과와 홈페이지 예약 상태를 구분해 확인하며 예외 상황을 다룹니다.</p></div>
+            <div class="deep-point"><h4>이벤트 트래픽과 서버 운영</h4><p>이벤트 진행 중 서버가 중단된 경험을 계기로 Scouter에서 요청과 서버 상태를 확인했습니다. Redis 기반 세션 공유와 Tomcat 서버 4대의 분산 운영 구성을 마련했고, 이후 이벤트 기간에는 이전과 같은 서버 중단 없이 운영했습니다.</p></div>
             <div class="deep-point"><h4>기능과 정책을 연결</h4><p>고객사와 사찰의 요청을 받아 참여 조건, 인원 제한, 중복 신청, 취소 후 재신청 같은 예외를 확인합니다. 화면 동작과 DB 상태가 같은 정책을 표현하는지 살피며 예약·이벤트 기능을 수정합니다.</p></div>
             <div class="deep-point"><h4>고객사·사찰 CS</h4><p>고객사의 요청과 사찰의 전화·메일 문의를 직접 받고 사용 방법을 안내합니다. 예약·결제 관련 문의는 화면과 DB의 예약 상태, 결제사 처리 기록을 구분해 확인한 뒤 필요한 안내나 기능 수정으로 이어갑니다.</p></div>
             <div class="deep-point"><h4>Sparrow Cloud 검사·QA</h4><p>Sparrow Cloud 보안 검사를 실행하고 QA를 진행했습니다.</p></div>
