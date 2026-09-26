@@ -7,7 +7,7 @@
   <meta name="description" content="안재원의 실무·개인·팀 프로젝트 상세 기록. 담당 범위와 문제 해결 과정을 프로젝트별로 정리했습니다.">
   <title>프로젝트 상세 — 안재원</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23102035'/%3E%3Cpath d='M15 43 27 18h7l-12 25M29 43l12-25h8L37 43' fill='none' stroke='%238bb2ff' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="./styles.css?v=20260926-5">
+  <link rel="stylesheet" href="./styles.css?v=20260926-6">
   <script src="./script.js" defer></script>
 </head>
 <body class="detail-page">
@@ -20,7 +20,6 @@
         <a href="./index.html">첫 화면</a>
         <a href="#projects">프로젝트</a>
         <a href="#notes">작업 기록</a>
-        <a class="nav-contact" href="./index.html#contact">연락하기 <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
@@ -52,9 +51,10 @@
         <article class="deep-case" id="templestay">
           <div class="deep-aside"><span class="deep-kind">실무 · 2024.11 — 현재</span><h3>Templestay</h3><p>예약 홈페이지와 행정관리 시스템</p><div class="tags"><span>Spring</span><span>MyBatis</span><span>PostgreSQL</span><span>JSP</span></div></div>
           <div class="deep-body">
-            <p class="deep-lead">사용자 예약 화면과 운영자 관리 화면을 함께 보며 예약·결제·이벤트 기능을 개발하고 운영합니다.</p>
+            <p class="deep-lead">사용자 예약 화면과 운영자 관리 화면을 함께 보며 예약·결제·이벤트 기능을 개발하고, 고객사·사찰 문의 응대도 담당합니다.</p>
             <div class="deep-point"><h4>기능과 정책을 연결</h4><p>고객사와 사찰의 요청을 받아 참여 조건, 인원 제한, 중복 신청, 취소 후 재신청 같은 예외를 확인합니다. 화면 동작과 DB 상태가 같은 정책을 표현하는지 살피며 예약·이벤트 기능을 수정합니다.</p></div>
-            <div class="deep-point"><h4>데이터와 운영 기록 확인</h4><p>관리자 조회와 엑셀 출력의 조건, 상태별 집계 기준을 SQL과 실제 데이터로 대조합니다. 결제 문의에서는 예약 상태와 결제사의 처리 기록을 구분해 확인하고, 장애 조사에서는 로그의 시간 흐름으로 범위를 좁힙니다.</p></div>
+            <div class="deep-point"><h4>데이터와 운영 기록 확인</h4><p>관리자 조회와 엑셀 출력의 조건, 상태별 집계 기준을 SQL과 실제 데이터로 대조합니다. 장애 조사에서는 로그의 시간 흐름으로 범위를 좁힙니다.</p></div>
+            <div class="deep-point"><h4>고객사·사찰 CS</h4><p>고객사의 요청과 사찰의 전화·메일 문의를 직접 받고 사용 방법을 안내합니다. 예약·결제 관련 문의는 화면과 DB의 예약 상태, 결제사 처리 기록을 구분해 확인한 뒤 필요한 안내나 기능 수정으로 이어갑니다.</p></div>
             <div class="deep-point"><h4>함께 참여한 작업</h4><p>서울시 중소기업 워라밸 포인트제 사이트 개발에도 참여했습니다.</p></div>
             <div class="deep-actions"><a href="#note-reservation">예약·결제 판단 기록 ↗</a><a href="https://github.com/nakk3975/TripPlan/blob/main/PORTFOLIO.md" target="_blank" rel="noopener noreferrer">공개 경력 기록 ↗</a></div>
           </div>
