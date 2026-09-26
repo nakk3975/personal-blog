@@ -36,7 +36,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .main-nav { display: flex; align-items: center; gap: 34px; font-size: .92rem; font-weight: 650; }
 .main-nav a { color: #465469; }
 .main-nav a:hover, .main-nav a:focus-visible { color: var(--blue); }
-.main-nav .nav-contact { display: inline-flex; gap: 12px; color: var(--blue); }
 .menu-toggle { display: none; }
 
 .hero { background: linear-gradient(145deg, #dbe7f6 0%, #e5edf8 55%, #edf3fa 100%); }
@@ -142,13 +141,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .note-body p { color: var(--muted); font-size: .92rem; line-height: 1.83; margin: 0 0 14px; }
 .note-body a { color: var(--blue-dark); text-decoration: underline; text-underline-offset: 3px; }
 
-.contact-section { background: var(--navy); color: #fff; padding: 68px 0; scroll-margin-top: 0; }
-.contact-grid { display: flex; align-items: center; justify-content: space-between; gap: 36px; }
-.contact-section .section-label { color: #aabfff; margin-bottom: 11px; }
-.contact-grid h2 { font-size: clamp(2.2rem, 3.6vw, 3.2rem); letter-spacing: -.05em; line-height: 1.25; margin: 0; }
-.contact-grid p:not(.section-label) { color: #c2d0e3; margin: 13px 0 0; }
-.contact-link { display: flex; justify-content: space-between; gap: 40px; border-bottom: 1px solid #9cafc9; padding: 12px 0; min-width: 180px; font-weight: 710; white-space: nowrap; }
-.contact-link:hover { color: #b8c9ff; }
 .site-footer { background: #101d30; color: #a9b7ca; font-size: .8rem; }
 .footer-inner { display: flex; justify-content: space-between; gap: 20px; padding: 23px 0; }
 .footer-inner a { color: #e6edf8; }
@@ -276,8 +268,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .more-work a { min-height: 128px; padding: 17px 20px; }
   .note-row { padding: 26px 22px; }
   .stack-strip { grid-template-columns: 1fr; gap: 17px; }
-  .contact-grid { display: block; }
-  .contact-link { width: max-content; margin-top: 22px; }
   .footer-inner span:nth-child(2) { display: none; }
   .archive-heading { align-items: flex-start; }
   .archive-heading a { text-align: right; }
